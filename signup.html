@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eBook Sign Up</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #9bc9ee, #f39dc6);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .signup-container {
+      background: #fff;
+      color: #333;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      font-size: 14px;
+      margin-bottom: 5px;
+      display: block;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+      outline: none;
+      transition: border 0.3s ease;
+    }
+
+    .form-group input:focus {
+      border: 1px solid #ff6a00;
+      box-shadow: 0 0 8px rgba(255, 106, 0, 0.2);
+    }
+
+    .btn-signup {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-signup:hover {
+      background: linear-gradient(135deg, #ee0979, #ff6a00);
+    }
+
+    .signup-footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .signup-footer a {
+      color: #ff6a00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .signup-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Create Your Bookish Account</h2>
+    <p style="text-align: center; color: #555; margin-bottom: 20px;">
+      Join us to explore and manage your eBooks!
+    </p>
+    <form action="signup_process.php" method="POST">
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+      </div>
+      <button type="submit" class="btn-signup">Sign Up</button>
+    </form>
+    <div class="signup-footer">
+      <p>Already have an account? <a href="login.html">Log in here</a></p>
+    </div>
+  </div>
+</body>
+</html>

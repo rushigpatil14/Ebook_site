@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <h2>Upload a New Book</h2>
+            <form id="uploadForm">
+                <label for="title">Book Title</label>
+                <input type="text" id="title" name="title" required>
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" required>
+                <label for="file">Book File</label>
+                <input type="file" id="file" name="file" accept=".pdf" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+
+        <section class="book-list">
+            <h2>Manage Books</h2>
+            <table id="bookTable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>File</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Books will be dynamically loaded here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>
