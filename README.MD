@@ -3,6 +3,8 @@
 ## Overview
 The **Ebook_site** is an interactive web platform that allows users to browse, read, and download eBooks across multiple devices. It is built using modern web technologies to ensure a seamless user experience.
 
+![Homepage](https://github.com/rushigpatil14/Ebook_site/raw/main/assets/images/homepage.png)
+
 ## Features
 - **Mobile-First Responsive Design** – Ensures smooth accessibility across desktop, tablet, and mobile devices.
 - **User Authentication** – Secure login and registration system.
